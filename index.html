@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="APOLUX: accesorios, fragancias y detalles masculinos. Elige lo extraordinario.">
+  <title>APOLUX | Elige lo extraordinario</title>
+  <link rel="icon" type="image/png" href="img/isotipo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">DETALLES QUE MARCAN LA DIFERENCIA <span>✦</span> DESCUBRE APOLUX</div>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="APOLUX, ir al inicio">
+      <img src="img/logo-apolux.png" alt="Logo APOLUX">
+    </a>
+    <button class="mobile-menu" id="mobileMenu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav">
+      <a class="active" href="#inicio">Inicio</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#productos">Productos</a>
+      <a href="#nosotros">Nosotros</a>
+    </nav>
+    <button class="cart-trigger" id="openCart" aria-label="Abrir carrito">
+      <span class="cart-icon">🛒</span> Carrito <span class="cart-count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">APOLUX · ESTILO CON IDENTIDAD</p>
+        <h1>Elige lo <em>extraordinario.</em></h1>
+        <p>Estilo, personalidad y detalles que marcan la diferencia.</p>
+        <a class="btn btn-gold" href="#productos">Explorar productos <span>→</span></a>
+      </div>
+      <div class="hero-image" role="img" aria-label="Selección de accesorios masculinos elegantes"></div>
+      <div class="hero-bottom"><span></span> UNA ELECCIÓN. UNA PERSONALIDAD. <span></span></div>
+    </section>
+
+    
+<section class="section categories-section" id="categorias">
+
+    <div class="section-heading">
+        <p class="eyebrow">ENCUENTRA TU ESTILO</p>
+        <h2>Nuestras <em>categorías</em></h2>
+        <p>Detalles pensados para acompañar cada versión de ti.</p>
+    </div>
+
+    <div class="categories-wrapper">
+
+        <button
+            class="category-arrow"
+            id="categoryPrev"
+            type="button"
+            aria-label="Ver categorías anteriores"
+        >
+            &#10094;
+        </button>
+
+        <div class="categories" id="categoriesTrack">
+
+            <a class="category" href="#productos" data-category="Relojes|Accesorios">
+                <span>
+                    <img src="img/reloj.png" alt="Reloj" loading="lazy">
+                </span>
+                <b>Relojes y accesorios</b>
+            </a>
+
+            <a class="category" href="#productos" data-category="Fragancias">
+                <span>
+                    <img src="img/perfume.png" alt="Perfume" loading="lazy">
+                </span>
+                <b>Perfumería</b>
+            </a>
+
+            <a class="category" href="#productos" data-category="Moda">
+                <span>
+                    <img src="img/moda.png" alt="Moda masculina" loading="lazy">
+                </span>
+                <b>Moda masculina</b>
+            </a>
+
+            <a class="category" href="#productos" data-category="Coleccionables">
+                <span>
+                    <img src="img/coleccion.png" alt="Coleccionables" loading="lazy">
+                </span>
+                <b>Coleccionables</b>
+            </a>
+
+            <a class="category" href="#productos" data-category="Deportes">
+                <span>
+                    <img src="img/deportes.png" alt="Deportes" loading="lazy">
+                </span>
+                <b>Deportes</b>
+            </a>
+
+        </div>
+
+        <button
+            class="category-arrow"
+            id="categoryNext"
+            type="button"
+            aria-label="Ver categorías siguientes"
+        >
+            &#10095;
+        </button>
+
+    </div>
+
+</section>
+
+
+    <section class="section products-section" id="productos">
+      <div class="section-heading"><p class="eyebrow">SELECCIÓN APOLUX</p><h2>Productos <em>destacados</em></h2><p>Encuentra ese detalle que habla por ti.</p></div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-id="reloj-elegante">
+          <div class="product-image"><img src="img/reloj-elegante.png" alt="Reloj elegante" loading="lazy"><span class="product-tag">DESTACADO</span></div>
+          <div class="product-info"><p class="product-type">RELOJES</p><h3>Reloj elegante</h3><p class="description">Diseño clásico para cualquier ocasión.</p><div class="product-bottom"><strong>$150.000 <small>COP</small></strong><button class="add-btn" data-add="reloj-elegante">Agregar al carrito <span>＋</span></button></div></div>
+        </article>
+        <article class="product-card" data-id="reloj-deportivo">
+          <div class="product-image"><img src="img/Reloj-deportivo.png" alt="Reloj deportivo moderno" loading="lazy"></div>
+          <div class="product-info"><p class="product-type">RELOJES</p><h3>Reloj deportivo</h3><p class="description">Un estilo moderno y versátil.</p><div class="product-bottom"><strong>$120.000 <small>COP</small></strong><button class="add-btn" data-add="reloj-deportivo">Agregar al carrito <span>＋</span></button></div></div>
+        </article>
+        <article class="product-card" data-id="perfume-masculino">
+          <div class="product-image"><img src="img/one million.png" alt="Perfume masculino en frasco oscuro" loading="lazy"><span class="product-tag">FAVORITO</span></div>
+          <div class="product-info"><p class="product-type">FRAGANCIAS</p><h3>Perfume masculino</h3><p class="description">Una fragancia para destacar.</p><div class="product-bottom"><strong>$480.000 <small>COP</small></strong><button class="add-btn" data-add="perfume-masculino">Agregar al carrito <span>＋</span></button></div></div>
+        </article>
+        <article class="product-card" data-id="cadena-masculina">
+          <div class="product-image"><img src="img/cadena-masculina.jpg" alt="Cadena masculina metálica" loading="lazy"></div>
+          <div class="product-info"><p class="product-type">ACCESORIOS</p><h3>Cadena masculina</h3><p class="description">Un accesorio para complementar tu estilo.</p><div class="product-bottom"><strong>$55.000 <small>COP</small></strong><button class="add-btn" data-add="cadena-masculina">Agregar al carrito <span>＋</span></button></div></div>
+        </article>
+        <article class="product-card" data-id="billetera-premium">
+          <div class="product-image"><img src="img/billetera-premium.jpg" alt="Billetera negra de acabado premium" loading="lazy"></div>
+          <div class="product-info"><p class="product-type">ACCESORIOS</p><h3>Billetera premium</h3><p class="description">Práctica y elegante para el día a día.</p><div class="product-bottom"><strong>$65.000 <small>COP</small></strong><button class="add-btn" data-add="billetera-premium">Agregar al carrito <span>＋</span></button></div></div>
+        </article>
+        <article class="product-card" data-id="camiseta-deportiva">
+          <div class="product-image"><img src="img/camiseta-deportiva.jpg" alt="Camiseta deportiva negra" loading="lazy"></div>
+          <div class="product-info"><p class="product-type">MODA</p><h3>Camiseta deportiva</h3><p class="description">Comodidad y estilo para cualquier momento.</p><div class="product-bottom"><strong>$79.900 <small>COP</small></strong><button class="add-btn" data-add="camiseta-deportiva">Agregar al carrito <span>＋</span></button></div></div>
+        </article>
+        <article class="product-card" data-id="carro-coleccion">
+          <div class="product-image"><img src="img/carro-coleccion.png" alt="Automóvil a escala de colección" loading="lazy"></div>
+          <div class="product-info"><p class="product-type">COLECCIONABLES</p><h3>Carro de colección</h3><p class="description">Una miniatura para los amantes de los autos.</p><div class="product-bottom"><strong>$261.000 <small>COP</small></strong><button class="add-btn" data-add="carro-coleccion">Agregar al carrito <span>＋</span></button></div></div>
+        </article>
+        <article class="product-card" data-id="moto-coleccion">
+          <div class="product-image"><img src="img/moto-coleccion.png" alt="Motocicleta a escala de colección" loading="lazy"></div>
+          <div class="product-info"><p class="product-type">COLECCIONABLES</p><h3>Moto de colección</h3><p class="description">Un detalle especial para coleccionistas.</p><div class="product-bottom"><strong>$115.000 <small>COP</small></strong><button class="add-btn" data-add="moto-coleccion">Agregar al carrito <span>＋</span></button></div></div>
+        </article>
+        <article class="product-card" data-id="Balon-Baloncesto">
+          <div class="product-image"><img src="img/balon-basketboll.png" alt="Balón de Baloncesto" loading="lazy"></div>
+          <div class="product-info"><p class="product-type">DEPORTES</p><h3>Balon de Baloncesto</h3><p class="description">Para quienes viven su pasión por el deporte.</p><div class="product-bottom"><strong>$80.000 <small>COP</small></strong><button class="add-btn" data-add="balon-baloncesto">Agregar al carrito <span>＋</span></button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="brand-story" id="nosotros">
+      <div class="story-mark"><img src="img/isotipo.png"></div><div><p class="eyebrow">MÁS QUE UNA TIENDA, UNA EXPERIENCIA</p><h2>Sobre <em>APOLUX</em></h2><p>APOLUX reúne accesorios, fragancias, moda y artículos de colección para hombres que buscan expresar su personalidad en cada detalle. Creemos que los pequeños complementos pueden convertir lo cotidiano en algo extraordinario.</p><a href="#productos" class="text-link">Descubre la colección <span>→</span></a></div>
+    </section>
+    <section class="closing-banner"><p>EL DETALLE CORRECTO LO CAMBIA TODO</p><h2>Elige lo <em>extraordinario.</em></h2><a class="btn btn-outline" href="#productos">Ver colección</a></section>
+  </main>
+
+  
+<footer class="footer">
+    <img src="img/logo-apolux.png" alt="APOLUX">
+
+    <p>Elige lo extraordinario.</p>
+
+    <div class="footer-socials">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://wa.me/573224510531" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+
+    <div class="footer-line"></div>
+
+    <small>© 2026 APOLUX. Todos los derechos reservados.</small>
+    <small class="demo-note">Proyecto académico · Compra de demostración, sin pagos reales.</small>
+</footer>
+
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-labelledby="cartTitle">
+    <div class="drawer-header"><div><p class="eyebrow">TU SELECCIÓN</p><h2 id="cartTitle">Tu carrito <span id="drawerCount">(0)</span></h2></div><button class="icon-btn" id="closeCart" aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items" id="cartItems"><div class="empty-cart"><span>♧</span><h3>Tu carrito está vacío</h3><p>Descubre nuestros productos y agrega tus favoritos.</p><button class="btn btn-gold" id="continueShopping">Explorar productos</button></div></div>
+    <div class="cart-summary" id="cartSummary" hidden><div class="summary-row"><span>Subtotal</span><strong id="cartSubtotal">$0 COP</strong></div><div class="summary-row"><span>Envío</span><span>Por confirmar</span></div><div class="summary-total"><span>Total productos</span><strong id="cartTotal">$0 COP</strong></div><button class="btn btn-gold checkout-btn" id="checkoutBtn">Continuar con la compra <span>→</span></button><p class="secure-note">Compra de demostración. No se realizará ningún cobro.</p></div>
+  </aside>
+
+  <section class="checkout-modal" id="checkoutModal" aria-hidden="true" aria-labelledby="checkoutTitle">
+    <button class="icon-btn modal-close" id="closeCheckout" aria-label="Cerrar">×</button>
+    <p class="eyebrow">ÚLTIMO PASO</p><h2 id="checkoutTitle">Finalizar <em>compra</em></h2>
+    <p class="checkout-intro">Completa tus datos para generar el resumen de tu pedido.</p>
+    <form id="checkoutForm">
+      <label for="customerName">Nombre completo</label><input id="customerName" name="customerName" required minlength="3" placeholder="Tu nombre">
+      <label for="customerEmail">Correo electrónico</label><input id="customerEmail" name="customerEmail" type="email" required placeholder="correo@ejemplo.com">
+      <label for="customerPhone">Teléfono</label><input id="customerPhone" name="customerPhone" type="tel" required minlength="7" placeholder="Tu número de contacto">
+      <label for="customerAddress">Dirección de entrega</label><textarea id="customerAddress" name="customerAddress" required rows="2" placeholder="Dirección y ciudad"></textarea>
+      <div class="checkout-total"><span>Total del pedido</span><strong id="checkoutTotal">$0 COP</strong></div>
+      <button class="btn btn-gold checkout-btn" type="submit">Generar pedido de demostración</button>
+      <p class="secure-note">Esta versión es una demostración. No procesa pagos; los pedidos se guardan en la base de datos local.</p>
+    </form>
+  </section>
+  <div class="toast" id="toast" role="status" aria-live="polite"><span class="toast-check">✓</span><div><strong id="toastTitle">¡Producto agregado!</strong><p id="toastMessage"></p></div><button id="closeToast" aria-label="Cerrar notificación">×</button></div>
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+</body>
+</html>

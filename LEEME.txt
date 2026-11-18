@@ -1,0 +1,25 @@
+APOLUX — TIENDA WEB
+====================
+
+ARCHIVOS PRINCIPALES
+- index.html: estructura y contenido de la tienda.
+- styles.css: diseño visual, colores, distribución y adaptación móvil.
+- script.js: catálogo, carrito, cantidades, eliminación, notificaciones y simulación de compra.
+- img/: logo y recursos gráficos de los productos.
+
+CÓMO ABRIR
+1. Extrae la carpeta APOLUX_TIENDA.
+2. Abre la carpeta en Visual Studio Code.
+3. Abre index.html con Live Server (recomendado) o en el navegador.
+4. Agrega productos y abre el botón Carrito para probar las funciones.
+
+FUNCIONALIDAD
+- El carrito guarda los productos en localStorage del navegador.
+- Puedes agregar productos, cambiar cantidades y eliminarlos.
+- El total se calcula automáticamente.
+- El botón de finalizar compra abre un formulario de demostración.
+
+IMPORTANTE
+El checkout es una simulación académica. No hay pasarela de pago, inventario real,
+envío de pedidos ni servidor conectado. Para recibir pagos reales se necesita
+integrar un backend y una pasarela de pagos segura.
